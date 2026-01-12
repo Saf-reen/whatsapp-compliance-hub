@@ -232,116 +232,205 @@ const Index = () => {
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 pb-4 border-b border-border">
             Terms of Service
           </h2>
+          <p className="text-muted-foreground mb-8">
+            Last updated: {currentDate}
+          </p>
 
           <article className="legal-content space-y-8">
             <div id="acceptance" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">1. Acceptance of Terms</h3>
               <p className="text-muted-foreground leading-relaxed">
-                By using the Service, you agree to these Terms.
+                By accessing or using the WhatsApp Bulk Messaging Application ("App", "Service"), you agree to be bound by these Terms of Service ("Terms").
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                If you do not agree, you must not use the Service.
               </p>
             </div>
 
             <div id="description" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">2. Description of Service</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Allows businesses to send WhatsApp messages via official WhatsApp Business API for legitimate purposes.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                The Service allows businesses to send bulk WhatsApp messages using the official WhatsApp Business API for legitimate communication purposes including:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Transactional messages</li>
+                <li>Notifications and alerts</li>
+                <li>Customer updates</li>
+                <li>Marketing messages (only with user consent)</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                The Service is intended for business use only.
               </p>
             </div>
 
             <div id="eligibility" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">3. Eligibility</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                To use this Service, you must:
+              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                <li>Must be 18+</li>
-                <li>Authorized business representative</li>
-                <li>Compliance with laws and policies</li>
+                <li>Be at least 18 years old</li>
+                <li>Have legal authority to represent your business</li>
+                <li>Comply with all applicable laws and regulations</li>
+                <li>Follow Meta and WhatsApp policies</li>
               </ul>
             </div>
 
             <div id="responsibilities" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">4. User Responsibilities</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                You agree that you will:
+              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                <li>Send messages only to opted-in users</li>
-                <li>Maintain opt-in proof</li>
-                <li>Stop messaging on opt-out</li>
+                <li>Send messages only to users who have explicitly opted in</li>
+                <li>Provide accurate and lawful message content</li>
+                <li>Maintain proof of user opt-in if required</li>
+                <li>Use the Service in compliance with all applicable laws</li>
+                <li>Immediately stop messaging users who opt out</li>
               </ul>
             </div>
 
             <div id="prohibited" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">5. Prohibited Uses</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                You must not use the Service to:
+              </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                <li>Spam or unsolicited messages</li>
-                <li>Fraudulent or misleading content</li>
-                <li>Illegal activities</li>
-                <li>Harassment</li>
-                <li>Policy violations</li>
+                <li>Send spam or unsolicited messages</li>
+                <li>Send misleading, deceptive, or fraudulent content</li>
+                <li>Promote illegal activities</li>
+                <li>Harass, threaten, or abuse recipients</li>
+                <li>Violate WhatsApp, Meta, or local regulations</li>
+                <li>Bypass WhatsApp rate limits or safeguards</li>
               </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Violation may result in immediate suspension or termination.
+              </p>
             </div>
 
             <div id="meta-compliance" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">6. WhatsApp & Meta Compliance</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Subject to WhatsApp and Meta policies.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Use of this Service is subject to:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>WhatsApp Business Messaging Policy</li>
+                <li>Meta Platform Terms</li>
+                <li>Meta Developer Policies</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                We reserve the right to suspend or terminate access for any violation of these policies.
               </p>
             </div>
 
             <div id="suspension" className="scroll-mt-20">
-              <h3 className="text-xl font-semibold text-foreground mb-4">7. Suspension & Termination</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Access may be suspended or terminated for violations.
+              <h3 className="text-xl font-semibold text-foreground mb-4">7. Account Suspension & Termination</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We may suspend or terminate your access if:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>You violate these Terms</li>
+                <li>Your usage causes policy violations</li>
+                <li>Required by WhatsApp or Meta</li>
+                <li>Required by law enforcement</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Termination may occur without prior notice in severe cases.
               </p>
             </div>
 
             <div id="privacy-terms" className="scroll-mt-20">
-              <h3 className="text-xl font-semibold text-foreground mb-4">8. Privacy</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Governed by this <a href="#privacy-policy" className="text-primary hover:underline">Privacy Policy</a>.
+              <h3 className="text-xl font-semibold text-foreground mb-4">8. Data Usage & Privacy</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Use of the Service is also governed by our <a href="#privacy-policy" className="text-primary hover:underline">Privacy Policy</a>, which explains:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>What data we collect</li>
+                <li>How we use WhatsApp data</li>
+                <li>Data retention and deletion</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                By using the Service, you consent to such data practices.
               </p>
             </div>
 
             <div id="availability" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">9. Service Availability</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                No guarantee of uninterrupted service or delivery.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We strive to maintain uninterrupted service, but we do not guarantee:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Continuous availability</li>
+                <li>Error-free operation</li>
+                <li>Delivery of all messages</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Service may be interrupted due to maintenance, API limitations, or external factors.
               </p>
             </div>
 
             <div id="liability" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">10. Limitation of Liability</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                No liability for indirect damages or delivery failures.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                To the maximum extent permitted by law:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>We are not liable for indirect or consequential damages</li>
+                <li>We are not responsible for message delivery failures</li>
+                <li>We are not responsible for account bans caused by user misuse</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Use of the Service is at your own risk.
               </p>
             </div>
 
             <div id="indemnification" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">11. Indemnification</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Users indemnify Sria Infotech Pvt Ltd against claims.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                You agree to indemnify and hold harmless Sria Infotech Pvt Ltd from any claims, damages, or losses arising from:
               </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Your use of the Service</li>
+                <li>Your message content</li>
+                <li>Your violation of laws or policies</li>
+              </ul>
             </div>
 
             <div id="intellectual-property" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">12. Intellectual Property</h3>
               <p className="text-muted-foreground leading-relaxed">
-                All content and software belong to Sria Infotech Pvt Ltd.
+                All trademarks, logos, and software related to the Service are the property of Sria Infotech Pvt Ltd.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                You may not copy, modify, or distribute without written permission.
               </p>
             </div>
 
             <div id="modifications" className="scroll-mt-20">
-              <h3 className="text-xl font-semibold text-foreground mb-4">13. Modifications</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">13. Modifications to Terms</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Terms may be updated anytime.
+                We may update these Terms at any time.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Changes will be effective upon posting on this page.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Continued use of the Service indicates acceptance of updated Terms.
               </p>
             </div>
 
             <div id="governing-law" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">14. Governing Law</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Governed by laws of Hyderabad, India.
+                These Terms shall be governed by the laws of Hyderabad, India, without regard to conflict of law principles.
               </p>
             </div>
 
             <div id="terms-contact" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">15. Contact Information</h3>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                For questions or concerns regarding these Terms, contact:
+              </p>
               <div className="bg-muted/50 p-6 rounded-lg border border-border">
                 <p className="text-foreground"><strong>Company Name:</strong> Sria Infotech Pvt Ltd</p>
                 <p className="text-foreground mt-2">
