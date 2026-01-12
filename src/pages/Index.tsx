@@ -1,31 +1,5 @@
-import { useEffect } from "react";
-
 const Index = () => {
   const currentDate = "January 12, 2026";
-
-  useEffect(() => {
-    // Smooth scroll for anchor links
-    const handleClick = (e: MouseEvent) => {
-      const target = e.target as HTMLAnchorElement;
-      if (target.hash) {
-        e.preventDefault();
-        const element = document.querySelector(target.hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }
-    };
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", handleClick as EventListener);
-    });
-
-    return () => {
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.removeEventListener("click", handleClick as EventListener);
-      });
-    };
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -34,7 +8,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-lg font-semibold text-foreground">
-              WhatsApp Bulk Messaging
+              Sria Infotech Pvt Ltd
             </h1>
             <nav className="hidden md:flex gap-6 text-sm">
               <a href="#privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -60,54 +34,6 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Table of Contents */}
-        <nav className="mb-12 p-6 bg-muted/50 rounded-lg border border-border">
-          <h2 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-4">
-            Contents
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Privacy Policy</h3>
-              <ul className="space-y-1 text-sm text-muted-foreground">
-                <li><a href="#introduction" className="hover:text-foreground transition-colors">1. Introduction</a></li>
-                <li><a href="#about-application" className="hover:text-foreground transition-colors">2. About the Application</a></li>
-                <li><a href="#information-collected" className="hover:text-foreground transition-colors">3. Information We Collect</a></li>
-                <li><a href="#whatsapp-data" className="hover:text-foreground transition-colors">4. WhatsApp Data Usage</a></li>
-                <li><a href="#user-consent" className="hover:text-foreground transition-colors">5. User Consent (Opt-In)</a></li>
-                <li><a href="#how-we-use" className="hover:text-foreground transition-colors">6. How We Use Information</a></li>
-                <li><a href="#data-sharing" className="hover:text-foreground transition-colors">7. Data Sharing</a></li>
-                <li><a href="#data-storage" className="hover:text-foreground transition-colors">8. Data Storage & Security</a></li>
-                <li><a href="#data-retention" className="hover:text-foreground transition-colors">9. Data Retention</a></li>
-                <li><a href="#data-deletion" className="hover:text-foreground transition-colors">10. User Data Deletion</a></li>
-                <li><a href="#childrens-privacy" className="hover:text-foreground transition-colors">11. Children's Privacy</a></li>
-                <li><a href="#compliance" className="hover:text-foreground transition-colors">12. Compliance</a></li>
-                <li><a href="#policy-updates" className="hover:text-foreground transition-colors">13. Policy Updates</a></li>
-                <li><a href="#privacy-contact" className="hover:text-foreground transition-colors">14. Contact Information</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-medium text-foreground mb-2">Terms of Service</h3>
-              <ul className="space-y-1 text-sm text-muted-foreground">
-                <li><a href="#acceptance" className="hover:text-foreground transition-colors">1. Acceptance of Terms</a></li>
-                <li><a href="#description" className="hover:text-foreground transition-colors">2. Description of Service</a></li>
-                <li><a href="#eligibility" className="hover:text-foreground transition-colors">3. Eligibility</a></li>
-                <li><a href="#responsibilities" className="hover:text-foreground transition-colors">4. User Responsibilities</a></li>
-                <li><a href="#prohibited" className="hover:text-foreground transition-colors">5. Prohibited Uses</a></li>
-                <li><a href="#meta-compliance" className="hover:text-foreground transition-colors">6. WhatsApp & Meta Compliance</a></li>
-                <li><a href="#suspension" className="hover:text-foreground transition-colors">7. Suspension & Termination</a></li>
-                <li><a href="#privacy-terms" className="hover:text-foreground transition-colors">8. Privacy</a></li>
-                <li><a href="#availability" className="hover:text-foreground transition-colors">9. Service Availability</a></li>
-                <li><a href="#liability" className="hover:text-foreground transition-colors">10. Limitation of Liability</a></li>
-                <li><a href="#indemnification" className="hover:text-foreground transition-colors">11. Indemnification</a></li>
-                <li><a href="#intellectual-property" className="hover:text-foreground transition-colors">12. Intellectual Property</a></li>
-                <li><a href="#modifications" className="hover:text-foreground transition-colors">13. Modifications</a></li>
-                <li><a href="#governing-law" className="hover:text-foreground transition-colors">14. Governing Law</a></li>
-                <li><a href="#terms-contact" className="hover:text-foreground transition-colors">15. Contact Information</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
         {/* Privacy Policy Section */}
         <section id="privacy-policy" className="mb-16 scroll-mt-20">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 pb-4 border-b border-border">
@@ -118,7 +44,7 @@ const Index = () => {
             <div id="introduction" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">1. Introduction</h3>
               <p className="text-muted-foreground leading-relaxed">
-                This Privacy Policy explains how [Your Company Name] ("we", "our", "us") collects, uses, stores, and protects information when you use our WhatsApp Bulk Messaging Application ("App", "Service").
+                This Privacy Policy explains how Sria Infotech Pvt Ltd ("we", "our", "us") collects, uses, stores, and protects information when you use our WhatsApp Bulk Messaging Application ("App", "Service").
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 By using our App, you agree to the collection and use of information in accordance with this policy.
@@ -280,14 +206,19 @@ const Index = () => {
             <div id="privacy-contact" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">14. Contact Information</h3>
               <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <p className="text-foreground"><strong>Company Name:</strong> [Your Company Name]</p>
+                <p className="text-foreground"><strong>Company Name:</strong> Sria Infotech Pvt Ltd</p>
                 <p className="text-foreground mt-2">
                   <strong>Email:</strong>{" "}
                   <a href="mailto:ravis.rangari@gmail.com" className="text-primary hover:underline">
                     ravis.rangari@gmail.com
                   </a>
                 </p>
-                <p className="text-foreground mt-2"><strong>Website:</strong> [Your Website URL]</p>
+                <p className="text-foreground mt-2">
+                  <strong>Website:</strong>{" "}
+                  <a href="https://www.sriainfotech.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    https://www.sriainfotech.com/
+                  </a>
+                </p>
               </div>
             </div>
           </article>
@@ -384,14 +315,14 @@ const Index = () => {
             <div id="indemnification" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">11. Indemnification</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Users indemnify [Your Company Name] against claims.
+                Users indemnify Sria Infotech Pvt Ltd against claims.
               </p>
             </div>
 
             <div id="intellectual-property" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">12. Intellectual Property</h3>
               <p className="text-muted-foreground leading-relaxed">
-                All content and software belong to [Your Company Name].
+                All content and software belong to Sria Infotech Pvt Ltd.
               </p>
             </div>
 
@@ -405,21 +336,26 @@ const Index = () => {
             <div id="governing-law" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">14. Governing Law</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Governed by laws of [Your Country/State].
+                Governed by laws of Hyderabad, India.
               </p>
             </div>
 
             <div id="terms-contact" className="scroll-mt-20">
               <h3 className="text-xl font-semibold text-foreground mb-4">15. Contact Information</h3>
               <div className="bg-muted/50 p-6 rounded-lg border border-border">
-                <p className="text-foreground"><strong>Company Name:</strong> [Your Company Name]</p>
+                <p className="text-foreground"><strong>Company Name:</strong> Sria Infotech Pvt Ltd</p>
                 <p className="text-foreground mt-2">
                   <strong>Email:</strong>{" "}
                   <a href="mailto:ravis.rangari@gmail.com" className="text-primary hover:underline">
                     ravis.rangari@gmail.com
                   </a>
                 </p>
-                <p className="text-foreground mt-2"><strong>Website:</strong> [Your Website URL]</p>
+                <p className="text-foreground mt-2">
+                  <strong>Website:</strong>{" "}
+                  <a href="https://www.sriainfotech.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    https://www.sriainfotech.com/
+                  </a>
+                </p>
               </div>
             </div>
           </article>
@@ -444,7 +380,7 @@ const Index = () => {
       <footer className="border-t border-border bg-muted/30">
         <div className="max-w-4xl mx-auto px-6 py-8">
           <div className="text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} [Your Company Name]. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Sria Infotech Pvt Ltd. All rights reserved.</p>
             <p className="mt-2">
               This page is provided for Meta App Review compliance.
             </p>
